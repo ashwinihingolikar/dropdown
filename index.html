@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ 
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+<!--Navbar-->
+  <header class="header">
+    <div class="ham-menu">
+      <h1 style="height: 27px;" class="logo-img"> <img src="/images/logo.svg" alt="snap logo" class="logo">
+      </h1>
+      <img class="menu-icon" src="/images/icon-menu.svg" alt="" srcset="">  
+    </div>
+    
+    <!--desktop menu-->
+     <nav class="navbar">
+      <div class="nav-list">
+        <ul class="nav-item">
+          <div class="nav-parent">
+            <li class="nav-element" href="#" data-id="features">
+              <a data-id="features">Features</a>
+              <img  data-id="features"src="/images/icon-arrow-down.svg" alt="" srcset="">
+            </li>
+              <ul class="dropdown features" id="features">
+                <li><a><img src="images/icon-todo.svg" alt="todo-list icon"><span>Todo List</span></a></li>
+                <li><a><img src="images/icon-calendar.svg" alt="calender icon"><span>Calender</span></a></li>
+                <li><a><img src="images/icon-reminders.svg" alt="reminders icon"><span>reminders</span></a></li>
+                <li><a><img src="images/icon-planning.svg" alt="planning icon"><span>Planning</span></a></li>
+              </ul>
+          </div>
+          <div class="nav-parent"> 
+            <li class="nav-element" data-id="company">
+              <a data-id="company">Company</a><img data-id="company" src="/images/icon-arrow-down.svg" alt="">
+            </li>
+                <ul class="dropdown company" id="company">
+                <li><a>History</a></li>
+                <li><a>Our Team</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+          </div>
+        
+          <li class="nav-parent">
+            <a href="#" class="nav-element">Careers</a> 
+          </li>
+          <li class="nav-parent"> 
+            <a href="#" class="nav-element">About</a> 
+          </li>
+            
+        </ul>
+        
+      </div>
+      <div class="btns">
+        <button class="login-btn btn">Login</button>
+        <button class="register-btn btn">Register</button>
+      </div>  
+     </nav>
+  </header>
+  <main class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="heading mb"><span>Make</span> remote work</h1>
+        <p class="description mb">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="text-btn">Learn More</button>
+        <div class="brand-logos">
+          <img src="/images/client-databiz.svg" alt="databiz icon" class="brand-icon">
+          <img src="/images/client-audiophile.svg" alt="audiophile icon" class="brand-icon">
+          <img src="/images/client-meet.svg" alt="meet icon" class="brand-icon">
+          <img src="/images/client-maker.svg" alt="maker icon" class="brand-icon">
+        </div>
+      </div>
+      <div class="img-box">
+        <img class="img-hero-desktop" src="/images/image-hero-desktop.png" alt="">
+        <img class="img-hero-mobile" src="/images/image-hero-mobile.png" alt="">
+      </div>
+    </div>
+    
+    
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
